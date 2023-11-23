@@ -11,6 +11,7 @@ import { metricValueItem } from './elements/metricValue';
 import { rectangleItem } from './elements/rectangle';
 import { serverItem } from './elements/server/server';
 import { textItem } from './elements/text';
+import { trauPakkerItem } from './elements/trauPakker';
 import { windTurbineItem } from './elements/windTurbine';
 
 export const DEFAULT_CANVAS_ELEMENT_CONFIG: CanvasElementOptions = {
@@ -29,7 +30,7 @@ export const defaultElementItems = [
   serverItem,
 ];
 
-export const advancedElementItems = [buttonItem, windTurbineItem, droneTopItem, droneFrontItem, droneSideItem];
+export const advancedElementItems = [buttonItem, windTurbineItem, droneTopItem, droneFrontItem, droneSideItem, trauPakkerItem];
 
 export const canvasElementRegistry = new Registry<CanvasElementItem>(() => [
   ...defaultElementItems,
