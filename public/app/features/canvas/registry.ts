@@ -1,12 +1,14 @@
 import { Registry } from '@grafana/data';
 
 import { CanvasElementItem, CanvasElementOptions } from './element';
+import { bandTilTrauItem } from './elements/bandTilTrau';
 import { buttonItem } from './elements/button';
 import { droneFrontItem } from './elements/droneFront';
 import { droneSideItem } from './elements/droneSide';
 import { droneTopItem } from './elements/droneTop';
 import { ellipseItem } from './elements/ellipse';
 import { iconItem } from './elements/icon';
+import { kronesLabelItem } from './elements/kronesLabel';
 import { metricValueItem } from './elements/metricValue';
 import { rectangleItem } from './elements/rectangle';
 import { serverItem } from './elements/server/server';
@@ -30,7 +32,15 @@ export const defaultElementItems = [
   serverItem,
 ];
 
-export const advancedElementItems = [buttonItem, windTurbineItem, droneTopItem, droneFrontItem, droneSideItem, trauPakkerItem];
+export const advancedElementItems = [
+  buttonItem, 
+  windTurbineItem, 
+  droneTopItem, 
+  droneFrontItem, 
+  droneSideItem, 
+  trauPakkerItem, 
+  bandTilTrauItem, 
+  kronesLabelItem];
 
 export const canvasElementRegistry = new Registry<CanvasElementItem>(() => [
   ...defaultElementItems,

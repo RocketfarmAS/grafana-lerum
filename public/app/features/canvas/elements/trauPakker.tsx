@@ -78,7 +78,7 @@ const TrauPakkerDisplay = ({ data }: CanvasElementProps<TrauPakkerConfig, TrauPa
     }
 
 
-    const bladeXMovement = `spin 3s linear infinite`;
+    const bladeXMovement = `moveH 3s linear infinite`;
 
     return (
         <svg width="222" height="79" viewBox="0 0 222 79" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -334,12 +334,12 @@ export const trauPakkerItem: CanvasElementItem = {
 const getStyles = (theme: GrafanaTheme2) => ({
     blade: css({
         transformOrigin: '94.663px 94.663px',
-        '@keyframes spin': {
+        '@keyframes moveH': {
             from: {
                 transform: 'translate(0, 0)',
             },
             to: {
-                transform: 'translate(50px, 0)',
+                transform: 'translate(80px, 0)',
             },
         },
     }),
